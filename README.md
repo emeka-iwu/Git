@@ -11,7 +11,7 @@ These 2 commands are used to set up user identity in git. The email should be sa
 git init initialises a repo on current directory. this is only to be ran once
 
 # synchronising
-to sync a local repo to an already created online repo, git remote add git@github.com:username/repo.git  is used. However to clone all the files and its contents, git clone git@github.com:username/repo.git is used.
+to sync a local repo to an already created online repo, git remote add origin git@github.com:username/repo.git  is used. However to clone all the files and its contents, git clone git@github.com:username/repo.git is used.
 
 # checking synchronisation
 git remote -v is used to see the source url for push and pull  
