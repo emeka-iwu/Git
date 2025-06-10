@@ -1,0 +1,34 @@
+git --version or git -v #shows the version of git installed on machine
+sudo dnf update git # updates git package on loacal machine
+git init #this initialises a git repo on local machine
+git config --global user.name 'user_name' #creates a username for git user
+git config --global user.email 'email_address' #creates an email for git user
+git remote add origin git@github.com:username/repo.git  #this sycronises local repo to online repo ie github
+git clone git@github.com:username/repo.git
+git remote -v #checks for source push and pull urls
+git branch #lists all branches on local
+git branch -r #list all branches available online
+git branch -M newbranchname #renames a branch
+git branch -D branchname #deletes  branch
+git push origin --delete branchname #deletes a branch in the online repo
+git push origin :branchname #delets a branch in the online repo
+git checkout -b branchname #this creates and switches to a newly created branch
+git checkout branchname #this switches to an existing branch
+git add . or git add file #adds file(s) to staging area
+git commit -m 'message' #commits a file/files
+git commit -am 'message' #adds and commits a file that are being tracked
+git merge branchname #this merges a branch that is already ahead with current branch (fast forward)
+git status #shows the status of the current branch
+git log #shows the log activites and commit history of a branch
+git log --oneline #shows log in more readable format
+git config --global merge.tool meld #configures meld as default merge tool
+git mergetool #this is used to sort our merge error
+git config --list #lists configuration for git
+git diff --staged #this shows the difference between a commited file and a file that has been edited and staged but not commited in a branch
+git diff branchone branchtwo #shows the difference two branches
+git config --global core.editor 'core --wait' #sets vs code as editor for git
+.gitignore # this file is used to hold files 
+git stash # this is used to catche a branch before checking out of a branch
+git stash pop # this is used to resume a branch after is has been already stashed
+git stash --list # this shows the list of stashes in a branch
+git rebase branchname # this is used to merge a branch while maintianing a linear commit history
