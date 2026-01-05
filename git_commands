@@ -32,3 +32,4 @@ git stash # this is used to catche a branch before checking out of a branch
 git stash pop # this is used to resume a branch after is has been already stashed
 git stash --list # this shows the list of stashes in a branch
 git rebase branchname # this is used to merge a branch while maintianing a linear commit history
+git pull origin main --allow-unrelated-histories
